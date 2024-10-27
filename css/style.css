@@ -1,0 +1,75 @@
+*{
+    text-decoration: none;
+}
+
+.topp {
+    margin-top: -60px;
+}
+
+p {
+    font-size: 36px;
+    font-family: "Source Code Pro", serif;
+    padding: 20px 30px;
+}
+
+h1 {
+    font-size: 38px;
+    font-family: "Source Code Pro", serif;
+    padding: 10px 30px;
+    font-weight: bold
+}
+
+nav {
+    padding-left: 20px;
+    padding-right: 20px;
+    border: black solid 1px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    line-height: 80px;
+    height: 80px;
+    width: auto;
+}
+
+.navsection {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 500px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 10px 15px;
+    margin-right: 50px;
+    font-size: 30px;
+    font-family: "Source Code Pro", serif;
+    position: relative;
+    left: 350px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+li:hover {
+    background-color: white;
+    color: white;
+    border: black solid 1px;
+    border-radius: 15%;
+}
+
+.logo{
+    width: 240px;
+    height: 50px;
+    background-image: url(../img/mvsic\ logo.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+}
