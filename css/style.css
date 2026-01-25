@@ -3,10 +3,10 @@
 }
 
 footer {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: 400px;
   background-image: url(../img/footer\ page\ 1.png);
-  background-size: fill;
+  background-size: 100% 100%;
 }
 
 p {
@@ -18,6 +18,14 @@ h1 {
   font-family: "Source Code Pro", serif;
   padding: 10px 30px;
   font-weight: bold;
+}
+
+/* Header is sticky to make the navigation bar stay at the top */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-top: 15px;
 }
 
 nav {
@@ -71,16 +79,6 @@ li:hover {
   border-radius: 15%;
 }
 
-.logo {
-  width: 240px;
-  height: 50px;
-  background-image: url(../img/mvsic\ logo.png);
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
 @media (min-width: 768px) and (orientation: landscape),
   (orientation: landscape) {
   p {
@@ -95,12 +93,14 @@ li:hover {
     margin-top: -60px;
   }
 
-  /* Header is sticky to make the navigation bar stay at the top */
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    padding-top: 15px;
+  .logo {
+    width: 240px;
+    height: 50px;
+    background-image: url(../img/mvsic\ logo.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
   }
 
   /* Button Navigation Styles on Home Page*/
@@ -208,5 +208,18 @@ li:hover {
 
   h1 {
     font-size: 26px;
+  }
+  .headerbtn {
+    display: none;
+  }
+
+  .logo {
+    width: 120px;
+    height: 25px;
+    background-image: url(../img/mvsic\ logo.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
   }
 }
