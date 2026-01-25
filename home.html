@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kirya Nazir" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="description"
+      content="MVSC helps beginners start music production with simple steps: intro, setup, basics, and a short demo you can follow."
+    />
+    <meta name="keywords" content="music,production,DAW,cakewalk,beginners" />
+    <title>MVSC - Home</title>
+
+    <link rel="icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,97 +22,130 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <img
-      src="img/piano-logo.png"
-      alt="window with a piano in front"
-      style="width: 100%; height: auto"
-    />
 
-    <header>
-      <nav>
-        <section class="navsection">
-          <a href="#"><section class="logo"></section></a>
-          <ul>
-            <li class="headerbtn"><a href="#">Intro</a></li>
-            <li class="headerbtn"><a href="#">Setup</a></li>
-            <li class="headerbtn"><a href="#">Basics</a></li>
-            <li class="headerbtn"><a href="#">Demo</a></li>
-            <li class="headerbtn"><a href="#">Contact</a></li>
-          </ul>
-        </section>
+  <body>
+    <figure class="hero">
+      <img
+        src="img/piano-logo.png"
+        alt="A window view with a piano in the foreground"
+        title="MVSC hero image"
+      />
+      <figcaption class="sr-only">MVSC homepage hero image.</figcaption>
+    </figure>
+
+    <header class="site-header">
+      <nav class="nav-wrap" aria-label="Primary navigation">
+        <a class="brand" href="Home.html" aria-label="Go to homepage">
+          <span class="brand-logo" aria-hidden="true"></span>
+        </a>
+
+        <ul class="nav-list">
+          <li><a class="nav-link" href="Intro.html">Intro</a></li>
+          <li><a class="nav-link" href="Setup.html">Set up</a></li>
+          <li><a class="nav-link" href="Basics.html">Basics</a></li>
+          <li><a class="nav-link" href="Demo.html">Demo</a></li>
+          <li><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
-    <section class="cookie-popup" id="cookiePopup">
+    <section class="cookie-popup" id="cookiePopup" aria-label="Cookie message">
       <article class="cookie-content">
-        <p>This website uses cookies to ensure you get the best experience.</p>
-        <button class="cookie-btn" id="cookieBtn">Got it!</button>
+        <p>
+          This website uses cookies to ensure you get the best experience &amp; a smoother visit.
+        </p>
+        <button class="cookie-btn" id="cookieBtn" type="button">Got it!</button>
       </article>
     </section>
+
+    <main class="page">
+      <section class="card">
+        <h1>Start your music journey!</h1>
+
+        <p class="topp">
+          Despite wide availability and easy access to the internet, <em>making music</em>
+          still seems like an overly intimidating hobby to get started with. That is the issue
+          this website will try to help you with! My goal here is to make producing music feel
+          natural, and to emphasise your enjoyment over anything!
+        </p>
+
+        <p>
+          On this website, you&rsquo;ll find basic starting information on how to set up a music
+          program and how to start making your first song! In just a few minutes you&rsquo;ll be
+          ready and set up. We&rsquo;ll also help you through a basic demo of a first song so you
+          get an idea of what to expect and can get familiar with the program.
+          <strong>It&rsquo;s likely much simpler than you think it is!</strong>
+        </p>
+      </section>
+
+      <figure class="full-img">
+        <img
+          src="img/ibrahim-and-jd.png"
+          alt="Two people collaborating on music production with a laptop"
+          title="Working together on a song"
+        />
+        <figcaption class="sr-only">A short behind-the-scenes moment of producing music.</figcaption>
+      </figure>
+
+      <section class="card">
+        <p class="home-lead">
+          Take a look through the navigation, or click on the pages from here!
+          If you&rsquo;re new to the website, start at <em>Intro</em>. If you&rsquo;re coming back,
+          welcome back&trade; — jump to where you left off. You can also leave a message through
+          the contact form.
+        </p>
+
+        <section class="arrow" aria-hidden="true">
+          <span class="arrow-line"></span>
+          <span class="arrow-line"></span>
+          <span class="arrow-line"></span>
+          <span class="arrow-head"></span>
+        </section>
+
+        <section class="tile-grid" aria-label="Quick navigation tiles">
+          <a class="tile tile-intro" href="Intro.html">
+            <figure class="tile-figure">
+              <span class="tile-img" aria-hidden="true"></span>
+              <figcaption class="tile-caption">Intro</figcaption>
+            </figure>
+          </a>
+
+          <a class="tile tile-setup" href="Setup.html">
+            <figure class="tile-figure">
+              <span class="tile-img" aria-hidden="true"></span>
+              <figcaption class="tile-caption">Set up</figcaption>
+            </figure>
+          </a>
+
+          <a class="tile tile-basics" href="Basics.html">
+            <figure class="tile-figure">
+              <span class="tile-img" aria-hidden="true"></span>
+              <figcaption class="tile-caption">Basics</figcaption>
+            </figure>
+          </a>
+
+          <a class="tile tile-demo" href="Demo.html">
+            <figure class="tile-figure">
+              <span class="tile-img" aria-hidden="true"></span>
+              <figcaption class="tile-caption">Demo</figcaption>
+            </figure>
+          </a>
+        </section>
+
+        <a class="cta" href="Contact.html">Contact</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-copy">&copy; 2026 Kirya Salyik</p>
+    </footer>
+
     <script>
       const popup = document.getElementById("cookiePopup");
       const btn = document.getElementById("cookieBtn");
-
       btn.addEventListener("click", function () {
         popup.style.display = "none";
       });
     </script>
-
-    <h1>Start your music journey!</h1>
-    <p class="topp">
-      Despite wide availablity and easy access to the internet, making music
-      still seems like an overly intimidating hobby to get started with, that is
-      the issue this website will try to help you with! My goal here is to make
-      producing music seem like a very natural process, and to emphasise your
-      enjoyment over anything!
-    </p>
-    <p>
-      On this website, you’ll find basic starting information on how to set up a
-      music program and how to start making your first song! In just a few
-      minutes you’ll be ready and set up. We’ll also help you through a basic
-      demo of a first song so you get an idea of what to expect and can get
-      familiar with the program, It’s likely much simpler than you think it is!
-    </p>
-    <img
-      src="img/ibrahim-and-jd.png"
-      alt="picture of two people making music"
-      style="width: 100%; height: auto"
-    />
-    <p>
-      Take a look through the navigation, or click on the pages from here! If
-      you’re new to the website, start here! If you’re coming back, welcome
-      back! you can click on the page you left at(detail page links below). You
-      can also leave a message for me through the contact form!
-    </p>
-    <section class="buttonnav">
-      <button
-        class="navbutton"
-        style="background-image: url(../img/intro\ nav\ button.png)"
-      >
-        <span class="caption">Intro</span>
-      </button>
-      <button
-        class="navbutton"
-        style="background-image: url(../img/setup\ nav\ button.png)"
-      >
-        <span class="caption">Setup</span>
-      </button>
-      <button
-        class="navbutton"
-        style="background-image: url(../img/basics\ nav\ button.png)"
-      >
-        <span class="caption">Basics</span>
-      </button>
-      <button
-        class="navbutton"
-        style="background-image: url(../img/demo\ nav\ button.png)"
-      >
-        <span class="caption">Demo</span>
-      </button>
-    </section>
-    <footer>
-      <p style="color: white">&copy; 2026 Kirya Salyik</p>
-    </footer>
   </body>
 </html>
