@@ -1,5 +1,5 @@
 Student name: Kirya Nazir
-Student number: 728057
+Student number: 728067
 Student class: IT2A
 GitHub Repository: https://github.com/Kirya-Inh/web-markup
 GitHub Pages URL: https://kirya-inh.github.io/web-markup/
